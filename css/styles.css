@@ -5,11 +5,11 @@
 }
 
 body {
-    font-family: 'Poppins',Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     line-height: 1.6;
 }
 
-/* Estilos para el encabezado */
+
 .header {
     padding: 20px;
 }
@@ -53,36 +53,75 @@ h1 {
     }
 }
 
-/* Contenedor para las imágenes */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
-    height: 100vh;
+    border: solid;
+    margin: 10px;
 }
 
 .image-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 48%; 
+    width: 48%;
     margin-bottom: 20px;
+    border: solid gray;
+}
+
+.image-box-container {
+    display: flex;
+    flex-direction: column;
+    border: solid skyblue;
+    padding: 10px;
+    height: 325px;
+}
+
+.second,
+.fourth,
+.six {
+    justify-content: flex-end;
+}
+
+@media (min-width: 1024px) {
+
+    .second,
+    .five {
+        justify-content: flex-end;
+    }
+
+    .first,
+    .third,
+    .fourth,
+    .six {
+        justify-content: flex-start;
+    }
+}
+
+.photo-and-position {
+    border: solid blue;
+    display: flex;
+    align-content: center;
 }
 
 .image-box img {
     width: 150px;
     height: auto;
     margin-bottom: 10px;
+    border: solid green;
 }
 
 .details {
     text-align: center;
+    border: solid red;
 }
 
 .name {
     font-weight: bold;
     margin-bottom: 5px;
+    border: dashed red;
 }
 
 
@@ -90,14 +129,26 @@ h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     font-size: 14px;
-    margin-left: 10px;
+    border: dashed black;
 }
 
 
 @media (min-width: 1024px) {
     .image-box {
-        width: 30%; 
+        width: 30%;
     }
+
 }
 
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    font-size: 14px;
+}
 
+footer a {
+    text-decoration: none;
+    color: #333;
+}
