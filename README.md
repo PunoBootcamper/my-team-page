@@ -1,6 +1,6 @@
-# Make It Real - NAME OF THE PROJECT
+# Make It Real - My-team-page
 
-This is a solution to the _______ project of the Make It Real course.
+This is a solution to the my-team-page project of the Make It Real course.
 
 ## Table of contents
 
@@ -22,18 +22,16 @@ This is a solution to the _______ project of the Make It Real course.
 
 Users should be able to:
 
-- Task 1
-- Task 2
+- Create a responsive team page using Flexbox.
+- Align and distribute team member blocks.
+- Display team members' photos, names, and roles.
+- Make the design responsive for both desktop and mobile views.
+- Ensure proper use of CSS properties like margin, padding, and box-sizing.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+<img src="./resources/desktop-preview.png" width="700">
+<img src="./resources/mobile-preview.png" height="450">
 
 
 ## My process
@@ -42,26 +40,20 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- Mobile-first workflow
+- Flexbox for layout
+- Responsive design (mobile-first workflow)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+While working on this project, I learned how to effectively use Flexbox to align and distribute elements, both vertically and horizontally. Additionally, I enhanced my understanding of creating responsive layouts that adapt to both desktop and mobile screens. Here's an example of how I used Flexbox for vertical alignment:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
 }
 ```
 
@@ -69,19 +61,18 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I plan to continue refining my knowledge of Flexbox and CSS Grid to better handle complex layouts. Additionally, I would like to focus more on accessibility features to ensure that my web designs are usable for all users.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Conceptos básicos de flexbox](https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox) - This helped me to vertically sort the blocks.
+- [Uso de Media Queries](https://developer.mozilla.org/es/docs/Web/CSS/CSS_media_queries/Using_media_queries) - It helped me define styles according to screen size.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Github - [william lupaca](https://github.com/PunoBootcamper)
 
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thanks to the Make It Real course for providing this challenge and the helpful resources that guided me throughout the process.
